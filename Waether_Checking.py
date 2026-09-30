@@ -20,18 +20,17 @@ def get_weather(city: str) -> dict:
         f"https://p2pclouds.up.railway.app/v1/learn/weather?city={city}"
     )
 
-    # Convert response to JSON
-    data = res.json()
+ def get_weather(city: str) -> dict:
+    ...
+    return response.json()
 
-    return data
 
-
-    agent = create_agent(
+agent = create_agent(
     model=llm,
     tools=[get_weather],
-    system_prompt="You are a helpful  Weather Assistant Use the get_weather tool whenever the user asks about weather."
+    system_prompt="You are a helpful assistant. "
+    "Use the get_weather tool when the user asks about weather."
 )
-
 # Run the agent
 response = agent.invoke(
     {
