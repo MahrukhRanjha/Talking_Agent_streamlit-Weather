@@ -1,9 +1,12 @@
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 import requests
+import streamlit as st
+
 
 llm = ChatGoogleGenerativeAI(
-    api_key="AQ.Ab8RN6LveDNe-VTRWb8xxcNfkmjQXCIyY9QyJFCUgPixhXn-FA",
+    
+    api_key = st.secrets["GEMINI_API_KEY"],
     model="gemini-3.6-flash",
     temperature=2,
     max_tokens=None,
