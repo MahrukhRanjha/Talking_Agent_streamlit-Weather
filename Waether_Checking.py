@@ -16,13 +16,17 @@ def get_weather(city: str) -> dict:
     """Get weather for a given city."""
 
     # Send GET request to the Weather API
-    res = requests.get(
+    response = requests.get(
         f"https://p2pclouds.up.railway.app/v1/learn/weather?city={city}"
     )
 
- def get_weather(city: str) -> dict:
-    ...
+    # Check if the request was successful
+    response.raise_for_status()
+
+    # Convert response to JSON
     return response.json()
+
+
 
 
 agent = create_agent(
