@@ -3,4 +3,3 @@ python-dotenv
 langchain>=1.0.0
 langchain-google-genai
 requests
-streamlit
