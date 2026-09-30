@@ -1,6 +1,5 @@
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
-from PyPDF2 import PdfReader
 import requests
 
 llm = ChatGoogleGenerativeAI(
