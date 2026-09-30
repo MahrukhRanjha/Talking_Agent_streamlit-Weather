@@ -1,4 +1,4 @@
-```python
+python
 from langchain.agents import create_agent
 from langchain_google_genai import ChatGoogleGenerativeAI
 import requests
@@ -65,4 +65,3 @@ response = agent.invoke(
 # Display Result
 # -----------------------------
 st.write(response["messages"][-1].content)
-```
