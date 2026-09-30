@@ -3,7 +3,7 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 import requests
 
 llm = ChatGoogleGenerativeAI(
-    api_key="AQ.Ab8RN6LGDjpUKCq4xxREvo-5Nllc7YjSMDkvpOA0OxHRK2kmwA",
+    api_key="AQ.Ab8RN6LveDNe-VTRWb8xxcNfkmjQXCIyY9QyJFCUgPixhXn-FA",
     model="gemini-3.6-flash",
     temperature=2,
     max_tokens=None,
